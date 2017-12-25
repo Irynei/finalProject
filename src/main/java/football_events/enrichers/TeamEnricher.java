@@ -1,5 +1,6 @@
 package football_events.enrichers;
 
+import football_events.annotations.ShowDataFrameInTheBeginning;
 import football_events.udfs.GetTeamByPlayer;
 import org.apache.spark.sql.DataFrame;
 import org.springframework.stereotype.Component;
@@ -18,6 +19,7 @@ public class TeamEnricher implements Enricher {
     private static final String PLAYER_COLUMN = "fromPlayer";
 
     @Override
+    @ShowDataFrameInTheBeginning
     public DataFrame enrich(DataFrame dataFrame){
         return dataFrame.withColumn(TEAM_COLUMN, callUDF(GetTeamByPlayer.class.getName(), col(PLAYER_COLUMN)));
     }

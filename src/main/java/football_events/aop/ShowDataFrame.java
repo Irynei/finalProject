@@ -17,7 +17,7 @@ import static jdk.nashorn.internal.runtime.regexp.joni.Config.log;
 @Profile(DEV)
 public class ShowDataFrame {
     @Before("@annotation(football_events.annotations.ShowDataFrameInTheBeginning)")
-    public void showDataFrameInTheBeginningOf(JoinPoint jp) {
+    public void showDataFrameInTheBeginningOfMethod(JoinPoint jp) {
         DataFrame dataFrame = (DataFrame) jp.getArgs()[0];
         String className = jp.getTarget().getClass().getSimpleName();
         String methodName = jp.getSignature().getName();

@@ -1,5 +1,6 @@
 package football_events.enrichers;
 
+import football_events.annotations.ShowDataFrameInTheBeginning;
 import football_events.udfs.GetDescriptionByEvent;
 import football_events.udfs.GetTeamByPlayer;
 import org.apache.spark.sql.DataFrame;
@@ -17,6 +18,7 @@ public class EventDescriptionEnricher implements Enricher {
     private static final String CODE_COLUMN = "code";
 
     @Override
+    @ShowDataFrameInTheBeginning
     public DataFrame enrich(DataFrame dataFrame) {
         return dataFrame.withColumn(EVENT_DESCRIPTION_COLUMN, callUDF(GetDescriptionByEvent.class.getName(), col(CODE_COLUMN)));
     }

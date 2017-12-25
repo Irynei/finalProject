@@ -14,6 +14,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 @ComponentScan
 @PropertySource("classpath:main.properties")
+@EnableAspectJAutoProxy
 public class Conf {
 
     @Autowired

@@ -1,5 +1,6 @@
-package football_events;
+package football_events.businesslogic;
 
+import football_events.businesslogic.DataFrameBuilder;
 import football_events.enrichers.Enricher;
 import football_events.validators.Validator;
 import org.apache.spark.sql.DataFrame;

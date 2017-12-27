@@ -1,6 +1,7 @@
 package football_events.listeners;
 
 import football_events.annotations.RegisterUDF;
+import football_events.models.Types;
 import org.apache.spark.sql.SQLContext;
 import org.apache.spark.sql.api.java.UDF1;
 import org.springframework.beans.factory.annotation.Autowired;

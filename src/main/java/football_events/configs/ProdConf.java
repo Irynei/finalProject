@@ -18,6 +18,7 @@ public class ProdConf {
     public SparkConf sparkConf(){
         SparkConf sparkConf = new SparkConf();
         sparkConf.setAppName("football_events");
+        sparkConf.setMaster("local[*]");
         return sparkConf;
     }
 

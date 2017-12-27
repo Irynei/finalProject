@@ -1,6 +1,6 @@
 package football_events.annotations;
 
-import football_events.listeners.Types;
+import football_events.models.Types;
 import org.springframework.stereotype.Component;
 
 import java.lang.annotation.Retention;

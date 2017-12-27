@@ -1,15 +1,8 @@
 package football_events;
 
-import football_events.enrichers.TeamEnricher;
-import football_events.validators.PlayersValidator;
-import org.apache.spark.SparkConf;
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.JavaSparkContext;
+import football_events.businesslogic.ProcessData;
 import org.apache.spark.sql.DataFrame;
-import org.apache.spark.sql.SQLContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-
-import java.util.Map;
 
 /**
  * Created by irko on 25.12.17.

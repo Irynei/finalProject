@@ -1,4 +1,4 @@
-package football_events.listeners;
+package football_events.models;
 
 import org.apache.spark.sql.types.DataType;
 import org.apache.spark.sql.types.DataTypes;

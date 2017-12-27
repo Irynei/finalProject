@@ -1,7 +1,7 @@
 package football_events.udfs;
 
 import football_events.annotations.RegisterUDF;
-import football_events.listeners.Types;
+import football_events.models.Types;
 import org.apache.spark.sql.api.java.UDF1;
 
 /**

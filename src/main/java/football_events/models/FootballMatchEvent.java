@@ -1,4 +1,4 @@
-package football_events;
+package football_events.models;
 
 import lombok.Builder;
 import lombok.Data;
